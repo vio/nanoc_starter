@@ -1,0 +1,168 @@
+/**************************************************
+ * LESS for Nanoc Starter
+ * Your Name 2011 
+ * Read about LESS here: http://lesscss.org/
+ *************************************************/
+
+/* Variables */
+
+@sitewidth: 720px;
+
+@textcolor: #111;
+@headercolor: #333;
+
+@linkcolor: #000;
+@linkhovercolor: #000;
+
+
+/* Everything */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: @textcolor;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: @linkcolor;
+}
+
+a:hover {
+  color: @linkhovercolor;
+}
+
+
+/* Grids */
+// http://www.germanforblack.com/articles/handling-website-design-with-grids
+
+.column (@width: 0) { 
+  width: 0px + (60 * @width); 
+  float: left; 
+}
+
+
+/* Sections */
+
+#container {
+  width: @sitewidth;
+  margin: 60px auto;
+}
+
+#head {
+  margin-bottom: 50px;
+}
+
+#topbar {
+  float: left;
+  width: @sitewidth;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.topbar {
+  .column(2);
+}
+
+.topbar-end {
+  .column(1.0);
+}
+
+#sidebar {
+  float: left;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  .column(2);
+}
+
+.sidebar {
+  padding-bottom: 1px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.sidebar a {
+}
+
+#foot {
+  float: left;
+  margin-top: 30px;
+  padding-bottom: 90px;
+  text-align: left;
+  .column(13);
+}
+
+#foot p {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#main {
+  float: left;
+  width: @sitewidth;
+  margin: 0px 0px 20px 0px;
+  font-size: 12px;
+  .column(10);
+}
+
+#main {
+  h1, h2, h3, h4 {
+    margin: 0px 0px 10px 0px;
+  }
+
+  h1 {
+    color: @headercolor;
+  }
+
+  p {
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 20px;
+    text-align: left;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: normal;
+  }
+
+  a {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  ul, ol {
+    margin: 0 0 10px 15px;
+  }
+
+  li {
+    line-height: 20px;
+    font-weight: normal;
+  }
+
+  ul li {
+    list-style-type: circle;
+  }
+
+  img {
+    margin-bottom: 10px;
+  }
+
+  iframe{
+    margin-bottom: 10px;
+  }
+}
+

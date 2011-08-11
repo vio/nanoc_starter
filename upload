@@ -1,0 +1,3 @@
+#!/bin/bash
+
+nanoc compile && rsync -avz --delete output/ [username]@[domain.com]:[domain.com/nanoc]
