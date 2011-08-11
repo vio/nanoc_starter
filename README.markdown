@@ -2,6 +2,10 @@
 
 ## Overview
 
+This is a starter project for [nanoc](http://nanoc.stoneship.org/), a Ruby static site generator. Nanoc makes it easy to create and maintain static HTML/CSS websites using modern UNIX-y tools and domain-specific syntaxes. This starter project contains all the basics for creating a simple HTML website with a header, top menu, sub-menus, content, a footer and assets. See below for a more in-depth introduction.
+
+## Nanoc
+
 The website is built using a Ruby static site generator called nanoc. Let me tell you how a static site generator works.
 
 Basically, you define a number of "templates" and a number of "content" files. Each content file is associated with one of the templates. For instance, perhaps we will have a template called "projects page". Each project page will then use the "projects page" template. Associating a content file with a template is very simple – when you write the content, you simply write which template you would like to use.
