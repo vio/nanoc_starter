@@ -34,4 +34,13 @@ sudo gem install haml
 sudo gem install adsf
 ~~~
 
-More on this later...
+## Specifics
+
+One great thing about nanoc is that you can use a wide range of tools with it to suit your taste, but this starter makes some assumptions about what tools you're going to use. If you want to use different tools, you're mainly going to want to have a look at the 'compile' rules in the 'Rules' file.
+
+### Assumptions
+
+1. All content is in Markdown or HTML format (where you could also use Textile or any other markup language)
+2. You want to use RDiscount for Markdown -> HTML conversion
+3. All layout files are in HAML or ERB format
+4. All style files are in LESS format
